@@ -51,5 +51,9 @@ filter received from subscribing to MQTT
     lcd_client.py - a simple test client for the lcd display (not used in the demo)
     lcd_service.py - a service accessed by rpyc that emulates an lcd display in gtk
 
+### Link to LCD Widget screenshot ###
+
+https://drive.google.com/file/d/0B-Bopxux3jTbY1dVTzNmZWN6YUE/view?usp=sharing
+
 (c) Linaro 2016
 
