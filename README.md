@@ -1,4 +1,4 @@
-# 96board-mqtt-demo
+#96board-mqtt-demo
 MQTT publisher/subscriber demo using tweepy on a CE-edition 96board
 
 Introduction:
@@ -20,26 +20,25 @@ Setup:
 
 Based on Debian. Tested on a DB410c with build #144 installed from SD card.
 
-# install the relevant packages
+Install the relevant packages
 $ ./mqtt_broker_install.sh
 $ ./mqtt_client_install.sh
 
-# As configured, the broker and client are on the same host
+As configured, the broker and client are on the same host
 
-# add your user name to /etc/mosquitto/mosquitto.conf (e.g. user linaro)
+Add your user name to /etc/mosquitto/mosquitto.conf (e.g. user linaro)
 $ sudo vi /etc/mosquitto/mosquitto.conf
 
-# script to start the demo after installation
+Script to start the demo after installation
 $ ./mqtt_demo_start.sh
 
-# Creates the lcd display window and shows the tweets from the tweepy
-# filter received from subscribing to MQTT
+Creates the lcd display window and shows the tweets from the tweepy
+filter received from subscribing to MQTT
 
 Files:
 
 mqtt_broker_install.sh - script that installs the MQTT broker
 mqtt_client_install.sh - script that installs the MQTT client
-mqtt_demo.readme - this file
 mqtt_demo_start.sh - script to start the demo after installation
 settings.py - settings, including OAuth token for tweepy to access twitter apis
 streamingmqtt.py - sets up a tweepy stream that publishes filter results to MQTT
